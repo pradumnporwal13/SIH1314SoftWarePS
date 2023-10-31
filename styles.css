@@ -1,0 +1,305 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* overflow-x: scroll; */
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.29),#111111),url(https://cdn.pixabay.com/photo/2014/04/20/21/19/freight-train-328763_1280.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 120vh;
+    background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+/* NavBar of Website */
+.navBar{
+    /* height: 7vh; */
+    background-color: rgba(0, 0, 0, 0.824);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    width: 100%;
+    
+    border-bottom: 0.6px solid white;
+    /* position: fixed; */
+    z-index: 999; 
+}
+.RightSideOfNavBar{
+    /* actually me ye left side hai  */
+    display: flex;
+    justify-content: start;
+}
+.RightSideOfNavBar img{
+    height: 70px;
+}
+#coal-Heading{
+    font-size: 35px;
+    position: relative;
+    top: 20.5px;
+}
+@media (width<420px) {
+    .navBar{
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #coal-Heading{
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        top: 13.5px;
+        left: 10px;
+    }
+    .RightSideOfNavBar{
+        
+        display: flex;
+        justify-content: center;
+    }
+    .RightSideOfNavBar img{
+        height: 50px;
+    }
+}
+
+
+
+.LeftSideOfNavBar{
+    /* actually me ye right side hai  */
+    padding-top: 25px;
+    /* align-items: center; */
+}
+.LeftSideOfNavBar ul{
+    display: flex;
+    justify-content: end;
+    /* align-items: baseline; */
+}
+.LeftSideOfNavBar ul li{
+    /* to remove bullets */
+    
+    list-style: none;
+    padding-left: 20px;
+}
+.LeftSideOfNavBar ul li a{
+    /* to remove Underline  */
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.LeftSideOfNavBar ul li a:hover{
+    color: red;
+}
+@media (width<420px) {
+    /* LeftSideOfNavBar jo ki actually me right me hai */
+    .LeftSideOfNavBar{
+        padding-top: 5px;
+        margin-bottom: 10px;
+    }
+    .LeftSideOfNavBar ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-items: baseline; */
+    }
+    .LeftSideOfNavBar ul li a{
+        font-size: 13px;
+        font-weight: 400;
+        
+    }
+}
+
+
+/* Home section  */
+.Home-Section{
+    height: 120vh;
+}
+
+.Home-Section H1 u{
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.249); */
+    /* text-align: center; */
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* text-decoration: solid; */
+    letter-spacing: 1.5px;
+}
+.Home-Section H1{
+    text-align: center;
+    color: red;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+@media (width<420px){
+    .Home-Section H1{
+        /* margin-top: 10px; */
+        font-size: 20px;
+    }
+}
+
+.Home-Section form{
+    padding: 0px  100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+@media (width<420px){
+    .Home-Section form{
+        padding: 0px 18px;
+        /* text-align: justify; */
+    }
+
+}
+.Home-Section form input[type="number"]{
+    background-color: rgba(0, 0, 0, 0.299);
+    border: 2px solid black;
+    outline: none;
+    padding: 10px 50px;
+    font-size: 18px;
+    color: white;
+    width: 89%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.Home-Section form button{
+    width: 10%;
+    background-color: rgba(255, 0, 0, 0.804);
+    border: .5px solid rgba(176, 4, 4, 0.804);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+.Home-Section form button:hover{
+    border-color: white;
+}
+@media (width<420px){
+    .Home-Section form{
+        
+    }
+    .Home-Section form input[type="number"]{
+        width: 79%;
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+    .Home-Section form button{
+        width: 20%;
+        font-size: 15px;
+    }
+}
+
+/* table part  */
+.tablepart{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 74vh;
+    position: relative;
+    /* left: .7%; */
+    /* overflow-x: hidden; */
+    /* max-height: 300vh; */
+}
+.tablepart::-webkit-scrollbar {
+    display: none;
+}
+.tablepart table{
+    width: 84%;
+    margin-top: 15px;
+    color: white;
+    border-radius: 5px;
+    border: 0.1px solid white;
+    background-color: rgba(0, 0, 0, 0.299);
+    
+}
+.tablepart table tr th{
+    padding: 18px;
+}
+.tablepart table tr td{
+    padding: 10px;
+    font-weight: 200;
+    text-align: center;
+} 
+.tablepart table tr td img{
+    height: 30px;
+}
+
+@media (width<420px){
+    .tablepart{
+        /* width: 90% ; */
+        padding: 10%;
+        margin: 0px auto;
+        overflow-x: hidden;
+    }
+    .tablepart table tr th{
+        padding: 10px 1px;
+        font-size: 9px;
+        font-weight: 400;
+        color: white;
+        background-color: rgba(255, 0, 0, 0.146);
+    }
+    .tablepart table tr td{
+        padding: 10px 0px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
+
+/* excel sheet download  */
+.ExcelSheetDownload{
+    margin-top: 10px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.ExcelSheetDownload #ExcelSheet{
+    color: white;
+    background-color: white;
+    width: 49.5%;
+    border: none;
+    background-color: rgb(108, 176, 6);
+    padding: 10px;
+    font-size: 110%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 700;
+}
+.ExcelSheetDownload #ExcelSheet:hover{
+    background-color: rgb(85, 139, 4);
+    border: 1px solid white;
+}
+.ExcelSheetDownload #ResetSensors{
+    color: white;
+    background-color: white;
+    width: 49.5%;
+    border: none;
+    background-color: red;
+    padding: 10px;
+    font-size: 110%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+}
+.ExcelSheetDownload #ResetSensors:hover{
+    background-color: rgb(159, 2, 2);
+    border: 1px solid white;
+}
+
+@media (width<420px){
+    .ExcelSheetDownload{
+        margin-top: 20px;
+        padding: 0px 30px;
+    }
+    .ExcelSheetDownload #ExcelSheet{
+        font-size: 90%;
+    }
+    .ExcelSheetDownload #ResetSensors{
+        font-size: 90%;
+    }
+}
